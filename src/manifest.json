@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "Close Tab On Back",
+	"version": "0.1.0",
+	"description": "Makes the tab close when a user swipes back past the begining.",
+	"content_scripts": [
+		{
+			"css": [
+				"style.css"
+			],
+			"js": [
+				"package/jquery-3.3.1.min.js",
+				"package/lodash-4.14.4.core.js",
+				"main.js"
+			],
+			"matches": [
+				"*"
+			]
+		}
+	]
+}
